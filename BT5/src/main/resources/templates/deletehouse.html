@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>delete</title>
+	</head>
+	<body>
+		<table border="1">
+			<tr>
+				<td th:text="${house.id}"></td>
+				<td th:text="${house.address}"></td>
+				<td th:text="${house.area}"></td>
+				<td th:text="${house.type}"></td>
+				<td><a th:href="@{/confirmdelete/{id} (id=${house.id})}"><button>Confirm Delete</button></a></td>
+				<td><a th:href="@{/viewhouses}"><button>Cancel</button></a></td>
+			</tr>
+		</table>
+		
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+<head>
+	<title>b20dccn083</title>
+	<meta charset="UTF-8">
+	<style>
+		td{
+			padding: 1mm;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Danh sach cac mat hang</h1>
+	<h2><a th:href="@{/}">Home</a></h2>
+	<h2><a th:href="@{/mat_hang/addMH}">Them Mat Hang</a></h2>
+	<table border="1cm">
+		<tr>
+			<th>id</th>
+			<th>ten</th>
+			<th>loai</th>
+			<th>mota</th>
+			<th colspan="2">action</th>
+		</tr>
+        <tr th:each="mathang:${mathangs}">
+			<td th:text="${mathang.id}"></td>
+            <td th:text="${mathang.ten}"></td>
+            <td th:text="${mathang.loai}"></td>
+            <td th:text="${mathang.mota}"></td>
+            <td><a th:href="@{/mat_hang/editMH/{id} (id=${mathang.id})}">sua</a></td>
+            <td><a th:href="@{/mat_hang/deleteMH/{id} (id=${mathang.id})}">xoa</a></td>
+        </tr>
+    </table>
+
+</body>
+</html>

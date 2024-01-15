@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>home</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form th:object="${bookSearch}" th:action="@{/search}" method="post">
+        <table>
+            <tr>
+                <td>BookCode:</td>
+                <td><input type="text" th:field="*{bookcode}"></td>
+            </tr>
+            <tr>
+                <td>Title:</td>
+                <td><input type="text" th:field="*{title}"></td>
+            </tr>
+            <tr>
+                <td>Author:</td>
+                <td><input type="text" th:field="*{author}"></td>
+            </tr>
+            <tr>
+                <td>Category:</td>
+                <td><input type="text" th:field="*{category}"></td>
+            </tr>
+        </table>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>

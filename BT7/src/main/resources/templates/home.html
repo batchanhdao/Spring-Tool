@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>home</title>
+	</head>
+	<body>
+		<form th:object="${ses}" th:action="@{/add}" method="post">
+			<table>
+				<tr>
+					<td>id</td>
+					<td><input type="text" th:field="*{id}"></td>
+					<td th:text="${error.id}"></td>
+				</tr>
+				<tr>
+					<td>name</td>
+					<td><input type="text" th:field="*{name}"></td>
+					<td th:text="${error.name}"></td>
+				</tr>
+				<tr>
+					<td>dob</td>
+					<td><input type="date" th:field="*{dob}"></td>
+					<td th:text="${error.dob}"></td>
+				</tr>
+				<tr>
+					<td>department</td>
+					<td>
+						<select name="department">
+        					<option 
+        					th:each="value : ${department}" 
+        					th:value="${value}" 
+        					th:text="${value}"
+        					th:selected="${value == ses.department}">
+        					</option>
+    					</select>
+					</td>
+				</tr>
+					
+			</table>
+			<input type="submit" value="Add">
+			<input type="reset" value="Reset">
+		</form>
+	</body>
+	
+</html>

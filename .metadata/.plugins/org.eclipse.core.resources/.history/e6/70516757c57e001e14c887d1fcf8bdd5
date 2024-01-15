@@ -1,0 +1,36 @@
+package HTTT.Entity;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.PrePersist;
+import javax.persistence.Table;
+
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
+@Data
+@Entity
+@RequiredArgsConstructor
+@Table(name = "ThanhVien")
+public class ThanhVien {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private long id;
+	private String tentaikhoan;
+	private String diachi;
+	private String email;
+	private String password;
+	private Date ngaysinh;
+	private int vaitro;
+	private Date registeredAt;
+	
+	@PrePersist
+	public void register() {
+		this.registeredAt = new Date();
+	}
+}

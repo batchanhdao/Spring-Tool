@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>b20dccn083</title>
+</head>
+
+<body>
+	<form th:action="@{/mat_hang/saveMH}" method="post" th:object="${mathang}">
+		<table >
+			<tr>
+				<td>ten</td>
+				<td>loai</td>
+				<td>mota</td>
+				<td>action</td>
+				
+			</tr>
+			<tr>
+				<td><input type="text" th:field="*{ten}"></td>
+				<td><input type="text" th:field="*{loai}"></td>
+				<td><input type="text" th:field="*{mota}"></td>
+				<td><input type="submit" value="luu"></td>
+			</tr>
+
+		</table>
+	</form>
+	<input type="reset" value="Reset">
+
+</body>
+
+</html>

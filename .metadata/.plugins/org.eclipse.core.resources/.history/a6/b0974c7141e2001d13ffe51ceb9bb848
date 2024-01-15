@@ -1,0 +1,5 @@
+package QLKS.Entity;
+
+public class User {
+
+}

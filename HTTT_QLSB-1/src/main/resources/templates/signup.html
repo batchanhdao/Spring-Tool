@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>b20dccn083</title>
+</head>
+
+<body>
+	<form th:action="@{/thanh_vien/signupPost}" method="post" th:object="${thanhvien}">
+		<table >
+			<tr>
+				<td>ten tai khoan</td>
+				<td>dia chi</td>
+				<td>email</td>
+				<td>password</td>
+				<td>action</td>
+				
+			</tr>
+			<tr>
+				<td><input type="text" th:field="*{tentaikhoan}"></td>
+				<td><input type="text" th:field="*{diachi}"></td>
+				<td><input type="email" th:field="*{email}"></td>
+				<td><input type="password" th:field="*{password}"></td>
+				<td><input type="submit" value="tao tai khoan"></td>
+			</tr>
+
+		</table>
+	</form>
+	<input type="reset" value="Reset">
+
+</body>
+
+</html>

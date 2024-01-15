@@ -1,0 +1,5 @@
+package QLKS.Repository;
+
+public class UserRepository {
+
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+<head>
+	<title>b20dccn083</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<div th:if="${user} != null">
+		<h1 th:text="${user}"></h1>
+		<a th:href="@{/mat_hang/listMH}">Quan ly mat hang</a>
+		<br>
+		<a th:href="@{/thanh_vien/logout}">Dang xuat</a>
+	</div>
+	<div th:unless="${user}">
+		<a th:href="@{/thanh_vien/login}">Dang nhap</a>
+	</div>
+	
+</body>
+</html>

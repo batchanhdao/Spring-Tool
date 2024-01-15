@@ -1,0 +1,13 @@
+package HTTT.Entity;
+
+import javax.persistence.Entity;
+
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
+@Data
+@Entity
+@RequiredArgsConstructor
+public class MatHang {
+
+}
