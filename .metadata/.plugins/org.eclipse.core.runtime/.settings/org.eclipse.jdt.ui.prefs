@@ -1,11 +1,16 @@
 LexicalSortingAction.isChecked=true
 MemberFilterActionGroup.org.eclipse.jdt.ui.JavaOutlinePage.4=true
+content_assist_autoactivation_triggers_java=.0123456789abcdefghijklmnopqrstuvwxyz
+content_assist_favorite_static_members=org.assertj.core.api.Assertions.*;org.mockito.Matchers.*;org.mockito.Mockito.*;org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestBuilders.*;org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.*;org.springframework.security.test.web.servlet.response.SecurityMockMvcResultMatchers.*;org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.*;org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.*;org.springframework.test.web.client.match.MockRestRequestMatchers.*;org.springframework.test.web.client.response.MockRestResponseCreators.*;org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;org.hamcrest.CoreMatchers.*;org.junit.Assert.*;org.junit.Assume.*;org.junit.jupiter.api.Assertions.*;org.junit.jupiter.api.Assumptions.*;org.junit.jupiter.api.DynamicContainer.*;org.junit.jupiter.api.DynamicTest.*;org.mockito.ArgumentMatchers.*
 content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="ProductMaintenance.Entity.Product"><rhs name\="ProductMaintenance.Entity.Product"/></lhs><lhs name\="QLKS.Room"><rhs name\="QLKS.Room"/></lhs><lhs name\="Student.Student"><rhs name\="Student.Student"/></lhs><lhs name\="HTTT.entity.ThanhVien"><rhs name\="HTTT.entity.ThanhVien"/></lhs><lhs name\="HTTT.service.user"><rhs name\="HTTT.service.user"/></lhs><lhs name\="HTTT.entity.MatHang"><rhs name\="HTTT.entity.MatHang"/></lhs><lhs name\="HTTT.service.thanhVienService"><rhs name\="HTTT.service.thanhVienService"/></lhs></history>
 content_assist_number_of_computers=15
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0
 eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=1
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
 org.eclipse.jdt.ui.formatterprofiles.version=23
+sourceHoverBackgroundColor=255,255,225
 spelling_locale_initialized=true
 typefilter_migrated_2=true
 useAnnotationsPrefPage=true

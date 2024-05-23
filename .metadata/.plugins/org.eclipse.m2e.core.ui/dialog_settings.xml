@@ -74,4 +74,19 @@
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="SQA"/>
+			<item value="midproj-083142094"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="SQA"/>
+			<item value="midproj-083142094"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
 </section>
